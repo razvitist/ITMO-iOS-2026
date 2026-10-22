@@ -1,0 +1,1 @@
+UsageMonitor/UsageMonitorExtension.swift: every new minute of good or bad app use, the extension sends a GET request with URLSession.dataTask, reads the status code and body, and saves the result to the log.
