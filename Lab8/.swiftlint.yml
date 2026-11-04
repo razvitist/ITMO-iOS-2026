@@ -1,0 +1,61 @@
+included:
+  - screen
+  - Shared
+  - BatteryReport
+  - UsageMonitor
+  - ShieldConfig
+  - screenTests
+  - screenUITests
+
+excluded:
+  - Design
+
+disabled_rules:
+  - todo
+  - trailing_comma
+
+opt_in_rules:
+  - force_unwrapping
+  - implicitly_unwrapped_optional
+  - empty_count
+  - empty_string
+  - first_where
+  - last_where
+  - contains_over_first_not_nil
+  - sorted_first_last
+  - toggle_bool
+  - redundant_nil_coalescing
+  - private_swiftui_state
+  - fatal_error_message
+  - modifier_order
+  - closure_spacing
+  - yoda_condition
+
+line_length:
+  warning: 160
+  error: 250
+  ignores_urls: true
+  ignores_comments: true
+
+file_length:
+  warning: 400
+  error: 700
+
+type_body_length:
+  warning: 250
+  error: 400
+
+function_body_length:
+  warning: 60
+  error: 100
+
+cyclomatic_complexity:
+  warning: 12
+  error: 20
+
+identifier_name:
+  min_length: 2
+  excluded: [a, b, c, x, y, id]
+
+nesting:
+  type_level: 2
